@@ -20,11 +20,11 @@ mouse = Controller()
 
 while True:
  try:
-  mouse.position = (200, 200)
-  mouse.press(Button.left)
-  #time.sleep(2)
-  mouse.release(Button.left)
+  click(200, 200)
+  time.sleep(0.01)
+  #mouse.release(Button.left)
   mouse.position = (500, 200)
   mouse.press(Button.left)
+  time.sleep(1)
  except KeyboardInterrupt:
      exit()
